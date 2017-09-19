@@ -1,0 +1,20 @@
+{
+  "name": "property-rental-app",
+  "description": "Small description for property-rental-app goes here",
+  "main": "",
+  "authors": [
+    "Carol Wanjohi <wanjohi.carol54@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/carolwanjohi/property-rental-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^4.3.1"
+  }
+}

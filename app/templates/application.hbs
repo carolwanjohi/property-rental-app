@@ -1,1 +1,20 @@
-{{outlet}}
+<div class= "container">
+
+    <header class= "jumbotron">
+        
+        {{#link-to 'index'}}<h1>Super Rentals</h1>{{/link-to}}
+
+    </header>
+
+    {{outlet}}
+
+    <hr/>
+
+    <footer>
+
+        {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+
+        {{#link-to 'about'}}About{{/link-to}}
+
+    </footer>
+</div>

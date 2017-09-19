@@ -11,18 +11,6 @@ export default Ember.Component.extend({
         // Hide image when image is clicked
         imageHide() {
             return this.set('isImageShowing', false);
-        },
-
-        // Update the selected record
-        update(rental, params) {
-            this.sendAction('update', rental, params)
-        },
-
-        // Delete the selected record
-        delete(rental) {
-            if (confirm("Are you sure you want to delete this rental?")) {
-                this.sendAction('destroyRental', rental);
-            }
         }
     }
 });

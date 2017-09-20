@@ -1,42 +1,42 @@
 {{#if addNewRental}}
 
-<h1>New Rental</h1>
+    <h1>New Rental</h1>
 
-<div>
-    <form>
-        <div class="form-group">
-            <label for="owner">Owner</label>
-            {{input value=owner id="owner"}}
-        </div>
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="owner">Owner</label>
+                {{input class="form-control" value=owner id="owner"}}
+            </div>
 
-        <div class="form-group">
-            <label for="type">Type</label>
-            {{input value=type id="type"}}
-        </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                {{input class="form-control" value=type id="type"}}
+            </div>
 
-        <div class="form-group">
-            <label for="city">City</label>
-            {{input value=city id="city"}}
-        </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                {{input class="form-control" value=city id="city"}}
+            </div>
 
-        <div class="form-group">
-            <label for="bedrooms">Number of Bedrooms</label>
-            {{input value=bedrooms id="bedrooms"}}
-        </div>
+            <div class="form-group">
+                <label for="bedrooms">Number of Bedrooms</label>
+                {{input  class="form-control" value=bedrooms id="bedrooms"}}
+            </div>
 
-        <div class="form-group">
-            <label for="totalRooms">Number of Total Rooms</label>
-            {{input value=totalRooms id="totalRooms"}}
-        </div> 
+            <div class="form-group">
+                <label for="totalRooms">Number of Total Rooms</label>
+                {{input  class="form-control" value=totalRooms id="totalRooms"}}
+            </div> 
 
-        <div class="form-group">
-            <label for="image">Image URL</label>
-            {{input value=image id="image"}}
-        </div>
+            <div class="form-group">
+                <label for="image">Image URL</label>
+                {{input value=image id="image"}}
+            </div>
 
-        <button class="btn btn-info" {{action 'saveRental1'}}>Save</button>
-    </form>
-</div>
+            <button class="btn btn-info" {{action 'saveRental1'}}>Save</button>
+        </form>
+    </div>
 
 {{else}}
 

@@ -1,8 +1,14 @@
 {{#if addNewReview}}
+
     <h1>New Review</h1>
     
     <div>
         <form>
+            
+            <div class="form-group">
+                <label for="author">Author:</label>
+                {{input class="form-control" value=author id="author"}}
+            </div>
 
             <div class="form-group">
                 <label for="rating">Rating:</label>
@@ -11,18 +17,16 @@
 
             <div class="form-group">
                 <label for="content">Content:</label>
-                <textarea class="form-control" rows="3">{{input value=content id="content"}}</textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="author">Author:</label>
-                {{input class="form-control" value=author id="author"}}
+                {{textarea class="form-control" rows="3" value=content id="content"}}
             </div>
 
             <button class="btn btn-info" {{action 'saveReview'}}>Save</button>
 
         </form>
     </div>
+
 {{else}}
-    <button class="btn btn-info" {{action 'addNewReview'}}>New Review</button>
+
+    <button class="btn btn-info" {{action 'reviewFormShow'}}>New Review</button>
+    
 {{/if}}

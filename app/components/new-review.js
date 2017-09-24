@@ -5,18 +5,19 @@ export default Ember.Component.extend({
 
     actions: {
         
-        addNewReview() {
+        reviewFormShow() {
             this.set('addNewReview', true);
         },
 
         saveReview() {
             var params = {
-                rating: this.get('rating'),
-                content: this.get('content'),
-                author: this.get('author')
+                author: this.get('author') ? this.get('author') : 'The Author Is Unknown',
+                rating: this.get('rating') ? this.get('rating') : 'No Rating Value Provided',
+                content: this.get('content') ? this.get('content') : 'The Author Has Not Provided Any Content',
+                rental: this.get('rental')
             };
             this.set('addNewReview', false);
-            this.sendAction('saveReview', params)
+            this.sendAction('saveReview', params);
         }
     }
 });

@@ -7,5 +7,6 @@ export default DS.Model.extend({
     totalRooms: DS.attr(),
     bedrooms: DS.attr(),
     image: DS.attr(),
-    reviews: DS.hasMany('review', {async: true})
+    reviews: DS.hasMany('review', {async: true}),
+    cost: DS.attr()
 });

@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         saveReview() {
             var params = {
                 author: this.get('author') ? this.get('author') : 'The Author Is Unknown',
-                rating: this.get('rating') ? this.get('rating') : 'No Rating Value Provided',
+                rating: parseInt(this.get('rating')),
                 content: this.get('content') ? this.get('content') : 'The Author Has Not Provided Any Content',
                 rental: this.get('rental')
             };

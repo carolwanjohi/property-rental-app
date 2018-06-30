@@ -11,4 +11,10 @@ available by arrangement through {{rental.owner}}.
     {{/each}}
 </ul>
 
+<div>
+    <h3>Map of {{rental.owner}}'s {{rental.type}}</h3>
+    {{google-maps rental=rental}}
+</div>
+
+
 <p><button class="btn btn-info" {{action 'delete' rental}}>Delete</button></p>

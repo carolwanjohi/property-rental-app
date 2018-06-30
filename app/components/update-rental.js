@@ -17,7 +17,9 @@ export default Ember.Component.extend({
                 type: this.get('type'),
                 totalRooms: this.get('totalRooms'),
                 image: this.get('image'),
-                bedrooms: this.get('bedrooms')
+                bedrooms: this.get('bedrooms'),
+                latitude: this.get('latitude'),
+                longitude: this.get('longitude')
             };
             // Hide the form and show the button
             this.set('updateRentalForm', false);

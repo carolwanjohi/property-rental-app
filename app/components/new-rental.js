@@ -16,7 +16,9 @@ export default Ember.Component.extend({
                 totalRooms: this.get('totalRooms') ? this.get('totalRooms') : 'The Total Number of Rooms Is Unknown',
                 image: this.get('image') ? this.get('image') : null,
                 bedrooms: this.get('bedrooms') ? this.get('bedrooms') : 'The Number of Bedrooms Is Unknown',
-                cost: parseInt(this.get('cost'))
+                cost: parseInt(this.get('cost')) ? this.get('cost') : null,
+                latitude: this.get('latitude') ? this.get('latitude') : null,
+                longitude: this.get('longitude') ? this.get('longitude') : null
             }
             this.set('addNewRental', false);
             this.sendAction('saveRental2', params);

@@ -31,6 +31,16 @@
             {{input  class="form-control" value=image id="image" placeholder=rental.image}}
         </div>
 
+        <div class="form-group">
+            <label for="latitude">Latitude:</label>
+            {{input  class="form-control" value=rental.latitude id="latitude" placeholder=rental.latitude}}
+        </div>
+
+        <div class="form-group">
+            <label for="longitude">Longitude:</label>
+            {{input  class="form-control" value=rental.longitude id="longitude" placeholder=rental.longitude}}
+        </div>
+
         <button class="btn btn-info" {{action 'update' rental}}>Save</button>
 
     </form>

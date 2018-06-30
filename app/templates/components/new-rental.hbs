@@ -26,17 +26,27 @@
 
             <div class="form-group">
                 <label for="totalRooms">Number of Total Rooms</label>
-                {{input  class="form-control" value=totalRooms id="totalRooms"}}
+                {{input class="form-control" value=totalRooms id="totalRooms"}}
             </div> 
 
             <div class="form-group">
                 <label for="image">Image URL</label>
-                {{input value=image id="image"}}
+                {{input class="form-control" value=image id="image"}}
             </div>
 
             <div class="form-group">
                 <label for="cost">Price per night</label>
                 {{input  class="form-control" value=cost id="cost"}}
+            </div>
+
+            <div class="form-group">
+                <label for="latitude">Latitude:</label>
+                {{input  class="form-control" value=latitude id="latitude"}}
+            </div>
+
+            <div class="form-group">
+                <label for="longitude">Longitude:</label>
+                {{input  class="form-control" value=longitude id="longitude"}}
             </div>
 
             <button class="btn btn-info" {{action 'saveRental1'}}>Save</button>
